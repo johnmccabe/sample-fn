@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  sample-fn:
+    lang: python
+    handler: ./sample
+    image: johnmccabe/sample-fn2:0.1
